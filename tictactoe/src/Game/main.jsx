@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import Board from "../Board";
+import CommentService from "./game.service";
 
-class Game extends React.Component {
+class Game extends Component {
   render() {
-    return (
+    const component = (
       <div className="game">
         <div className="game-board">
           <Board />
@@ -14,6 +15,8 @@ class Game extends React.Component {
         </div>
       </div>
     );
+
+    return component;
   }
 }
 
